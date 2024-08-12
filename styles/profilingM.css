@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap');
+@import "logo.css";
+* {
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: auto;
+    background: #036;
+}
+header{
+    width: 100%;
+    display: flex;
+    border-bottom: 2px rgba(14, 77, 139, 0.88) solid;
+}
+header nav{
+    background: #036;
+    width: 100%;
+    min-height: 8vh;
+    flex-shrink: 0;
+}
+
+label.logo{
+    color: #FF5003;
+    font-family: Montserrat;
+    font-size: 35px;
+    padding: 0 100px;
+    line-height: 80px;
+    font-weight: 700;
+}
+header nav ul {
+    float: right;
+    margin-right: 3.3rem;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 80px;
+}
+
+header nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px ;
+}
+
+
+header nav a{
+    color: #FF8E00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/*wrapper*/
+.wrapper{
+    display: flex;
+    min-height: calc(100vh - 8vh);
+    width: 100%;
+}
+
+/*sidebar*/
+.wrapper .sidebar{
+    flex: 25.55%;
+    
+    background-color: #036;
+    flex-shrink: 0;
+    border-right: 3px rgba(14, 77, 139, 0.88) solid;
+}
+.sidebar-ul .active{
+    background: #FF8E00;
+}
+
+.wrapper .sidebar ul li a{
+    margin: 0;
+    padding: 0;
+    color:#fff;
+
+
+    /*figma*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03375rem;
+    padding: 20px;
+    padding-left: 60px;
+    display: block;
+    align-items: center;
+    
+    
+}
+
+.nav-link .icon{
+    margin-right: 8px;
+}
+
+/*child sidebar*/
+.child-sb .child-sidebar-li{
+    margin-left: 4vh;
+}
+.child-sb .child-sidebar-li .child-link{
+    font-size: 0.885rem;
+}
+.sidebar .child-active{
+    background-color:  #fc8e098c;
+}
+
+
+
+
+/*content*/
+
+.wrapper .main-page{
+    flex: 74.45%;
+    background: #002347;
+    padding: 40px 100px 100px;
+    
+}
+
+.wrapper .main-page header{
+    border: transparent;
+    padding-top: 30px;
+ }
+ 
+ .wrapper .main-page .add{
+     all: unset;
+     padding-right: 15px;
+     padding-bottom: 2vh;
+     border: transparent;
+     text-align: center;
+     color: #ffffff;
+     font-family: Roboto;
+     font-size: 36px;
+     font-style: normal;
+     font-weight: bold;
+     text-transform: uppercase;
+ 
+ }
+ 
+ .wrapper .main-page .prof{
+     all:unset;
+     padding-right: 15px;
+     padding-bottom: 2vh;
+     border: transparent;
+     text-align: center;
+     color: #FF8E00;
+     font-family: Roboto;
+     font-size: 36px;
+     font-style: normal;
+     font-weight: bold;
+     text-transform: uppercase;
+ 
+ }
+
+
+ /*table*/
+ table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+th,
+td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    color: #fff;
+}
+thead {
+    font-family: Roboto;
+
+  }
+thead th{
+    color: #b66401;
+    font-weight: bold;
+}
+
+i{
+    color: #fff;
+}
+.icon-t-edit:hover{
+    color: lime;
+}
+.icon-t-del:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+
+/*search*/
+/*Search*/
+.form-search{
+    width: 100%;
+
+    background-color: #00336691;
+    color: #FFF;
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 60px;
+}
+.form-search .input-box{
+    width: 100%;
+
+}
+.form-search .input-box input{
+    font-size: 20px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    background-color: #003F7D8A;
+    color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.form-search .search{
+    height: 50px;
+    width: 100%;
+    color: #FFF;
+    background-color: #FF8E00;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-search .search:hover{
+    background-color: #b66401;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*EDIT POPUP*/
+.popup{
+    width: 75%;
+    height: 70%;
+    background-color: #0277c5;
+    color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+/*popup form*/
+.popup-cont header{
+    border: transparent;
+    padding-top: 30px;
+    padding-left: 30px;
+ }
+
+.popup-cont .add{
+    all: unset;
+    padding-right: 15px;
+    padding-bottom: 2vh;
+    border: transparent;
+    text-align: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.popup-cont .prof{
+    all:unset;
+    padding-right: 15px;
+    padding-bottom: 2vh;
+    border: transparent;
+    text-align: center;
+    color: #FF8E00;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+.form-main{
+    color: #FFF;
+    position: relative;
+    padding: 70px 40px;
+}
+.form-main .input-box{
+    width: 100%;
+    padding: 10px;
+}
+.form-main .input-box label{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.form-main .input-box input{
+    font-size: 20px;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    background-color: #003F7D8A;
+    color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.form-main .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+.form-main .input-box select{
+    font-size: 20px;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    background-color: #003F7D8A;
+    color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+.form-main .buttons{
+    margin-top: 20px;
+    display: flex;
+    column-gap: 15px;
+}
+.form-main .btnAdd{
+    
+    height: 50px;
+    width: 50%;
+    color: #FFF;
+    background-color: #FF8E00;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-main .btnRes{
+    height: 50px;
+    width: 50%;
+    color: #FFF;
+    background-color: #FF8E00;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover{
+    background-color: #b66401;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animation shit*/
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
