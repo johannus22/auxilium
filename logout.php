@@ -5,7 +5,7 @@ SESSION_START();
 $_SESSION = array();
 session_destroy();
 
-header("Location: signin.php"); 
+header("Location: index.php"); 
 exit();
 
 ?>
