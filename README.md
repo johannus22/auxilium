@@ -1,4 +1,5 @@
 # auxilium
+I HAVE TO UPDATE THE UI BECAUSE IT IS NOT RESPONSIVE
 
 Made by: John Rafael Masilungan (me) - main programmer 
 and Riggs Ramos as the one who helped me.
