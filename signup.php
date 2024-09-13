@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             if (password_verify($adminPassword, $adminHashedPassword)) {
                 $sql = "INSERT INTO tblaccount (username, passcode, power) VALUES ('$username', '$hashedPassword', 'subAdmin')";
                 if ($conn->query($sql) === true) {
-                    header("Location: signin.php");
+                    header("Location: index.php");
                     exit();
                 } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -115,7 +115,7 @@ function calculatePasswordStrength($password) {
 
 
         <div class="login_link">
-          Already an admin? <a href="signin.php">Login</a>
+          Already an admin? <a href="index.php">Login</a>
         </div>
       </form>
     </div>

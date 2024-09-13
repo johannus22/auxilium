@@ -24,7 +24,7 @@
                         if (isset($_SESSION["loggedin"]) === true){
                             echo "WELCOME! " . $_SESSION["username"];;
                         }else{
-                            header("Location: signin.php"); 
+                            header("Location: index.php"); 
                             exit();
                         }
 
